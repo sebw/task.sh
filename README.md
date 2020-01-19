@@ -50,6 +50,12 @@ Usage: task.sh
         Delete a project.
 ```
 
+## Configuration
+
+By default, tasks will be stored in `$HOME/.task.sh`.
+
+A configuration file is created under `$HOME/.config/task.sh/config`.
+
 ## i3wm shortcuts
 
 Suggested shortcuts for i3wm users:
