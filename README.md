@@ -11,7 +11,7 @@ A dmenu and git based command-line utility to manage task lists.
 
 ## Why task.sh? How does it work?
 
-I'm a huge shortcut keyboard user.
+I'm a huge keyboard shortcuts user.
 
 I have searched for a simple todo application for a few hours and couldn't find
 any that was lightweight, simple, and easily accessible from keyboard shortcuts.
