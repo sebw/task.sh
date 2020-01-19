@@ -42,6 +42,7 @@ bindsym $meta+t exec "~/bin/task.sh --task"
 bindsym $meta+shift+t exec "~/bin/task.sh --task-done"
 bindsym $meta+y exec "~/bin/task.sh --project"
 bindsym $meta+shift+y exec "~/bin/task.sh --delete-project"
+bindsym $meta+u exec "gedit --class=floating ~/.task.sh/task.txt"
 ```
 
 ## Screencast
