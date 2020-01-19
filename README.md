@@ -9,6 +9,24 @@ A dmenu and git based command-line utility to manage task lists.
 - awk
 - sed
 
+## Why task.sh? How does it work?
+
+I'm a huge shortcut keyboard user.
+
+I have searched for a simple todo application for a few hours and couldn't find
+any that was lightweight, simple, and easily accessible from keyboard shortcuts.
+
+Then I found a script on [suckless.org](https://git.suckless.org/sites/file/tools.suckless.org/dmenu/scripts/todo.html) that was very close to what I wanted.
+The script was very simple and limited to one list.
+
+I decided to extend it to multiple lists, with Git as the storage backend.
+
+Lists are called projects, and a project is actually a git branch.
+
+Anytime you add a task, it is committed to the branch.
+
+Deleting a project equals a branch delete.
+
 ## Installation
 
 Copy `task.sh` somewhere in your `$PATH`.
