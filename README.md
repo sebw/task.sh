@@ -35,7 +35,9 @@ Copy `task.sh` somewhere in your `$PATH`.
 
 `task.sh` can be used from the command line.
 
-Obviously, it is highly recommended to use keyboard shortcuts in your desktop environment to make it more user friendly.
+Obviously, it is highly recommended to use keyboard shortcuts in your desktop 
+environment to make it more user friendly. See i3wm suggested shortcuts below.
+
 
 ```
 Usage: task.sh
