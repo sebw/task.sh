@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# i3blocks script for task.sh
+
+set -o pipefail
+
+### Edit the path if needed
+dir=$HOME/.task.sh
+task=$dir/task.txt
+done=$dir/done.txt
+
+if [ -e "$task" ]; then
+    TASK=$(wc -l $task | awk '{print $1}')
+    if [ "$?" != "0" ]; then
+        echo "<span foreground=\"red\">task.txt not found</span>"
+    fi
+else
+    # task.txt should not be missing
+    TASK="!"
+fi
+
+if [ -e "$done" ]; then
+    DONE=$(wc -l $done | awk '{print $1}')
+else
+    # done.txt should not be missing
+    DONE="!"
+fi
+
+branch=$(cd $dir; git rev-parse --abbrev-ref HEAD)
+
+if [ "$branch" == "master" ]; then
+    FOREGROUND="red"
+    echo "<span foreground=\"${FOREGROUND}\">Create a project</span>"
+    exit 0
+fi
+
+if [ "$TASK" == "0" ]; then
+    color=''
+    text='Task'
+elif [ "$TASK" == "1" ]; then
+    color='foreground="#00FF00"'
+    text='Task'
+else
+    color='foreground="#00FF00"'
+    text='Tasks'
+fi
+
+echo "<span ${color}>${text} ${TASK}:${DONE} [$branch]</span>"
+   
