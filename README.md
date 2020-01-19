@@ -16,7 +16,7 @@ Copy `task.sh` somewhere in your `$PATH`.
 ## Usage
 
 ```
-"Usage: task.sh
+Usage: task.sh
 
     --task: 
         Add tasks to a project.
