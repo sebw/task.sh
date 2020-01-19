@@ -76,9 +76,15 @@ bindsym $meta+u exec "gedit --class=floating ~/.task.sh/task.txt"
 - give possibility to pass tasks directly at the CLI `--task "my new task"` and bypassing dmenu
 - bash/zsh autocompletion
 
-## i3blocks
+## Troubleshooting
 
-### Installation
+Change `DEBUG=false` to `DEBUG=true`.
+
+Debug logs are stored in `/tmp/task.sh.log`.
+
+# i3blocks Script
+
+## Installation
 
 For i3blocks users, place `i3blocks_task` in your script folder.
 
@@ -91,7 +97,7 @@ separator=true
 markup=pango
 ```
 
-### Screenshots
+## Screenshots
 
 ![](https://raw.githubusercontent.com/sebw/task.sh/master/i3blocks1.png)
 

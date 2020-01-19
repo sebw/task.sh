@@ -22,7 +22,7 @@ set -o pipefail
 # - bash/zsh autocompletion
 
 ### Enable debug with "true" if script acts up. Will output to /tmp/task.sh.log
-DEBUG="true"
+DEBUG="false"
 
 ### Some functions used throughout the script
 Logger () {
