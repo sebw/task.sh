@@ -36,11 +36,11 @@ Copy `task.sh` somewhere in your `$PATH`.
 ```
 Usage: task.sh
 
-    --task: 
+    --task:
         Add tasks to a project.
         If you are on the master project, suggests to switch or create a project.
 
-    --project: 
+    --project:
         Add a project or allows to switching to an existing one.
 
     --task-done:
@@ -54,8 +54,8 @@ Usage: task.sh
 
 Suggested shortcuts for i3wm users:
 
-```
-for_window [window_role="task_dialog"] floating enable
+```bash
+for_window [class="floating"] floating enable
 bindsym $meta+t exec "~/bin/task.sh --task"
 bindsym $meta+shift+t exec "~/bin/task.sh --task-done"
 bindsym $meta+y exec "~/bin/task.sh --project"
@@ -84,7 +84,7 @@ For i3blocks users, place `i3blocks_task` in your script folder.
 
 Add this section to `i3blocks.conf`:
 
-```
+```ini
 [i3blocks_task]
 interval=3
 separator=true
