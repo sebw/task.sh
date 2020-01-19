@@ -31,7 +31,11 @@ Deleting a project equals a branch delete.
 
 Copy `task.sh` somewhere in your `$PATH`.
 
-## Usage
+## Command Line Usage
+
+`task.sh` can be used from the command line.
+
+Obviously, it is highly recommended to use keyboard shortcuts in your desktop environment to make it more user friendly.
 
 ```
 Usage: task.sh
